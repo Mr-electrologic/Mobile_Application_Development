@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/namecard"
+        android:layout_width="379dp"
+        android:layout_height="269dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="2dp"
+        android:layoutDirection="ltr"
+        app:layout_constraintBottom_toTopOf="@+id/collegecard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingClass">
+
+        <EditText
+            android:id="@+id/editTitle"
+            android:layout_width="132dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="6dp"
+            android:ems="10"
+            android:hint="@string/title"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/editMiddle"
+            app:layout_constraintEnd_toStartOf="@+id/editFirst"
+            app:layout_constraintStart_toStartOf="@+id/namecard"
+            app:layout_constraintTop_toTopOf="@+id/namecard"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editFirst"
+            android:layout_width="226dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="6dp"
+            android:ems="10"
+            android:hint="@string/fname"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/namecard"
+            app:layout_constraintEnd_toEndOf="@+id/namecard"
+            app:layout_constraintStart_toEndOf="@id/editTitle"
+            app:layout_constraintTop_toTopOf="@+id/namecard" />
+
+        <EditText
+            android:id="@+id/editMiddle"
+            android:layout_width="160dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="90dp"
+            android:ems="10"
+            android:hint="@string/mname"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/editTaluka"
+            app:layout_constraintEnd_toStartOf="@+id/editLast"
+            app:layout_constraintStart_toStartOf="@+id/namecard"
+            app:layout_constraintTop_toBottomOf="@+id/editTitle" />
+
+        <EditText
+            android:id="@+id/editLast"
+            android:layout_width="226dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="90dp"
+            android:ems="10"
+            android:hint="@string/lname"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/namecard"
+            app:layout_constraintEnd_toStartOf="@+id/namecard"
+            app:layout_constraintStart_toStartOf="@+id/editMiddle"
+            app:layout_constraintTop_toBottomOf="@+id/editFirst" />
+
+        <EditText
+            android:id="@+id/editTaluka"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="175dp"
+            android:ems="10"
+            android:hint="@string/taluka"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/namecard"
+            app:layout_constraintEnd_toStartOf="@+id/namecard"
+            app:layout_constraintStart_toStartOf="@+id/namecard"
+            app:layout_constraintTop_toBottomOf="@+id/editMiddle" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/collegecard"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namecard">
+
+        <EditText
+            android:id="@+id/editRollno"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="6dp"
+            android:ems="10"
+            android:hint="@string/rollno"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/collegecard"
+            app:layout_constraintEnd_toStartOf="@+id/collegecard"
+            app:layout_constraintStart_toStartOf="@+id/collegecard"
+            app:layout_constraintTop_toTopOf="@+id/collegecard"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editCollegename"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="2dp"
+            android:ems="10"
+            android:hint="@string/cname"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/collegecard"
+            app:layout_constraintEnd_toEndOf="@+id/collegecard"
+            app:layout_constraintStart_toStartOf="@+id/collegecard"
+            app:layout_constraintTop_toBottomOf="@+id/editRollno"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonPress"
+        android:layout_width="187dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="121dp"
+        android:text="@string/press_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/collegecard" />
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="405dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="61dp"
+        android:background="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPress" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Person Info</string>
+    <string name="title">Title</string>
+    <string name="fname">First name</string>
+    <string name="mname">Middle name</string>
+    <string name="lname">Last name</string>
+    <string name="taluka">Taluka of residence</string>
+    <string name="rollno">Roll no</string>
+    <string name="cname">College name</string>
+    <string name="ptitle">Principal title</string>
+    <string name="pfname">Principal firstname</string>
+    <string name="pmname">Principal middlename</string>
+    <string name="plname">Principal lastname</string>
+    <string name="curl">College URL</string>
+    <string name="newtext">New</string>
+    <string name="searchtext">Search</string>
+    <string name="updatetext">Modify</string>
+    <string name="deletetext">Delete</string>
+</resources>
